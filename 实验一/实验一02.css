@@ -1,0 +1,54 @@
+
+table {
+    margin: auto;
+}
+
+.word {
+    font-family: ËÎÌו;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #0070C0;
+}
+
+.hs {
+    border-radius: 50%;
+}
+
+div {
+    text-align: center;
+}
+
+table tr td img {
+    width: 150px;
+}
+
+.container {
+    background-image: url(./resource/huangshan.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* height: 400px; */
+    width: 500px;
+    margin: auto;
+}
+.cute{
+    border-radius: 15px;
+}
+.block{
+    border-radius: 10px;
+}
+
+div div {
+    width: 250px;
+    font-size: 30px;
+    color: red;
+    border: 2px dotted black;
+    margin: auto;
+}
+
+a {
+    font-size: 30px;
+    color: red;
+    text-decoration: none;
+}
