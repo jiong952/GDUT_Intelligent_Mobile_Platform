@@ -1,0 +1,26 @@
+* {
+    margin: auto;
+}
+.block{
+    border:2px dashed #000;
+    background-color: rgba(255, 192, 192, 0);
+    width: 600px;
+}
+
+
+img {
+    width: 170px;
+}
+
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
