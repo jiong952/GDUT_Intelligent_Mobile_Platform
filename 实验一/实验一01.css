@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    width: 0;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border:1px dashed #000;
+}
+
+table {
+    margin: auto;
+}
+
+.downword {
+    font-family: 宋体;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #0070C0;
+}
+
+.word {
+    font-family: 宋体;
+    font-size: 50px;
+    text-align: center;
+    text-shadow:  1px 1px 1px grey;
+}
+
+.red {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+.blue {
+    color: #00B0F0;
+    text-decoration: underline;
+}
+
+.yellow {
+    color: #C45911;
+    text-decoration: underline;
+}
+
+.dblue {
+    color: #1F4E79;
+    text-decoration: underline;
+}
+
+.dred {
+    color: #C00000;
+    text-decoration: underline;
+}
+
+.dgreen {
+    color: #00B050;
+    text-decoration: underline;
+}
+
+.green {
+    color: #92D050;
+    text-decoration: underline;
+}
