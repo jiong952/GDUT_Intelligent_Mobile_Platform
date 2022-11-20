@@ -46,14 +46,14 @@ a {
 	height:820px;
 }
 .diyi:hover{
-	background-image: url(./img/01-1.jpeg);
+	background-image: url(../img/01-1.jpeg);
 }
 .dier:hover{
-	background-image: url(./img/01-2.jpeg);
+	background-image: url(../img/01-2.jpeg);
 }
 .disan:hover{
-	background-image: url(./img/01-3.jpeg);
+	background-image: url(../img/01-3.jpeg);
 }
 .disi:hover{
-	background-image: url(./img/01-4.jpeg);
+	background-image: url(../img/01-4.jpeg);
 }

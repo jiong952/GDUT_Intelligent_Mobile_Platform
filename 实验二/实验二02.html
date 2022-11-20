@@ -1,48 +1,107 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>员工档案</title>
-<link href="实验二02.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/实验二02.css">
 </head>
 <body>
-<div class="all"> 	
-    <form class="list" action="#" method="post">
-        <h2>员工档案</h2>
-        <p>
-        	<input type="text" value="本人真实姓名" class="txt" >
-        </p>
-        <p>
-        	<input type="text" value="请填写实际年龄" class="age" >
-        </p>
-        <p class="choose">
-            <label><input type="radio" name="sex"> 男</label>
-            <label><input type="radio" name="sex"> 女</label>
-        </p>
-        <p class="choose">
-            <label><input type="checkbox" > 技术部</label>
-            <label><input type="checkbox" > 行政部</label>
-            <label><input type="checkbox" > 财务部</label>
-            <label><input type="checkbox" > 人力资源部</label>
-        </p>
-        <p>
-            <select class="course">
-                <option>北京分公司</option>
-                <option selected="selected">上海分公司</option>
-                <option>广州分公司</option>
+    <script type="text/javascript">
+        var provinces=new Array('请选择省份','广东省','湖北省','湖南省','广西省');
+        var citys=new Array();
+        citys['请选择省份']=['请选择城市'];
+        citys['湖北省']=['武汉','黄石','宜昌','襄阳','孝感','黄冈'];
+        citys['湖南省']=['长沙','衡阳','岳阳','常德','张家界','怀化'];
+        citys['广东省']=['广州','深圳','珠海','汕头','佛山','江门'];
+        citys['广西省']=['南宁','桂林','北海','玉林','百色','贺州'];
+        function initProvince(){
+            var province=document.getElementById("province");
+            for (var i=0;i<provinces.length;i++) {
+                var option=document.createElement("option");
+                option.text=provinces[i];
+                option.value=provinces[i];
+                province.options.add(option);
+            }
+        }
+        function fillCity(){
+            var city=document.getElementById("city");
+            city.options.length=0;
+            var province=document.getElementById("province").value;
+            console.log(province);
+            console.log(citys[province]);
+            for (var i=0;i<citys[province].length;i++){
+                var option=document.createElement("option");
+                option.text=citys[province][i];
+                option.value=citys[province][i];
+                city.options.add(option);
+            }
+        }
+        window.onload=function(){
+            initProvince();
+            fillCity();
+        }
+    </script>
+    <div class="all">
+        <form class="list" action="#" method="post" name="form2">
+          <h2>传智博客学院档案</h2>
+          <p>
+            <input type="text" placeholder="本人真实姓名" class="txt" >
+          </p>
+          <p>
+            <input type="text" placeholder="请填写实际年龄" class="college" >
+          </p>
+          
+          <p class="sex"> 性别：
+            <label>
+              <input type="radio" name="sex">
+              男</label>
+            <label>
+              <input type="radio" name="sex">
+              女</label>
+          </p>
+          <p class="sex">省份：
+            <select id="province" onchange="fillCity()"></select>
+            城市：
+            <select id="city"></select>
+          </p>
+          <p class="choose"> 掌握语言：
+            <label>
+              <input type="checkbox" >
+              C++</label>
+            <label>
+              <input type="checkbox" >
+              Objective-C</label>
+            <label>
+              <input type="checkbox" >
+              Java</label>
+            <label>
+              <input type="checkbox" >
+              Python</label>
+            <label>
+              <input type="checkbox" >
+              HTML+CSS+JavaScript</label>
+          </p>
+          <p>
+            <select class="direction">
+              <option selected="selected" >前端开发</option>
+              <option>网页平面UI设计</option>
+              <option>IOS开发</option>
+              <option>高性能算法</option>
             </select>
-        </p>
-        <p class="money_box">
-            <input type="text" value="工作薪资" class="money"><span> 元/月（收入）</span>
-        </p>
-        <p>
-        	<textarea cols="50" rows="5" class="message">请简要描述自己的工作职责</textarea>
-        </p>
-        <p>
-        	<input type="submit" class="btn" value="提  交">
-        </p>
-    </form>
-</div>
+          </p>
+          <p class="money_box">
+            <input type="text" placeholder="工作薪资" class="money">
+            <span> 元/月（收入）</span> </p>
+          <p>
+            <textarea placeholder="请简述您有没有基础，以及为什么选择来传智播客学习？" cols="50" rows="5" class="message"></textarea>
+          </p>
+          <p>
+            <input type="submit" class="btn" value="提  交">
+          </p>
+        </form>
+      </div>
+        
 </body>
 </html>
-
