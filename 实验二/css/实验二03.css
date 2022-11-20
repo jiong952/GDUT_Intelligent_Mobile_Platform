@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.music {
+    margin: 200px auto;
+    width: 600px;
+    height: 700px;
+}
+
+.bgc {
+    position: relative;
+    margin: 200px auto;
+    width: 600px;
+    height: 595px;
+    background-color: pink;
+}
+
+.bgc .one {
+    position: absolute;
+    top: 280px;
+    left: 30px;
+    width: 200px;
+}
+
+.bgc .one:hover {
+    filter: saturate(200%);
+}
+
+.bgc .two {
+    position: absolute;
+    top: 220px;
+    left: 180px;
+    width: 150px;
+}
+
+.bgc .two:hover {
+    filter: saturate(200%);
+}
+
+.bgc .three {
+    position: absolute;
+    top: 160px;
+    left: 320px;
+    width: 100px;
+}
+
+.bgc .three:hover {
+    filter: saturate(200%);
+}
+
+.bgc .four {
+    position: absolute;
+    top: 120px;
+    left: 450px;
+    width: 50px;
+}
+
+.bgc .four:hover {
+    filter: saturate(200%);
+}
+
+.bgc .word {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    width: 200px;
+    height: 200px;
+    size: 14px;
+    font-style: normal;
+    font-family: "¿¬Ìå";
+    font-weight: bold;
+    color: rgb(246, 177, 66);
+    -webkit-filter:url(#diff1);
+    filter:url(#diff1);
+}
+
+audio {
+    width: 600px;
+}
