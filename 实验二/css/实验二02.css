@@ -1,0 +1,105 @@
+body, h2, form, img, input, select, textarea 
+    {
+        margin: auto;
+        list-style: none;
+        border: none;
+    }
+    .all 
+    {   /*整体控制页面*/
+        width: 100%;
+        height: 863px;
+        margin-right: auto;
+        margin-left: auto;
+        background: url(../img/02-1.jpg);
+    }
+    .list 
+    {   /*整体控制表单*/
+        width: 685px;
+        padding: 120px 0 0 240px;
+    }
+    p 
+    {
+        margin-top: 20px;
+    }
+    h2
+    {   /*控制表单标题*/
+        font-size: 38px;
+        color: #26211e;
+        margin-bottom: 60px;
+        padding-left: 0px;
+    }
+    /*设置表单控件样式*/
+    .txt, .college 
+    {
+        width: 360px;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 40px;
+        color: #ccc;
+    }
+    .province, .city
+    {
+        width: 80px;
+        height: 20px;
+        line-height: 30px;
+        padding-left: 30px;
+        color: #ccc;
+        border:1px black;
+        border-style: dotted;
+    }
+    .txt 
+    {
+        background: #fff url(../img/icon_name.png) no-repeat 10px center;
+    }
+    .college 
+    {
+        background: #fff url(../img/icon_college.png) no-repeat 10px center;
+    }
+    .choose
+    {
+        width: 390px;
+        height: 50px;
+        line-height: 25px;
+        background-color: #FFF;
+        padding: 5px 0 0 10px;
+    }
+    .sex, .area
+    {
+        width: 390px;
+        height: 30px;
+        line-height: 25px;
+        background-color: #FFF;
+        padding: 5px 0 0 10px;
+    }
+    .direction, .money 
+    {
+        width: 190px;
+        height: 25px;
+        padding-left: 10px;
+    }
+    .money 
+    {
+        color: #ddd;
+    }
+    .money_box span 
+    {
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .message 
+    {
+        width: 390px;
+        height: 80px;
+        padding: 5px 0 0 10px;
+        font-size: 12px;
+        color: #ccc;
+    }
+    .btn 
+    {
+        width: 390px;
+        height: 30px;
+        background-color: #eb6854;
+        color: #FFF;
+        font-weight: bold;
+    }

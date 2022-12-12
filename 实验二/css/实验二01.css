@@ -1,0 +1,59 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #ffffff;
+}
+
+.header li {
+	float: left;
+	height: 50px;
+	width: 25%;
+	border: 1px solid rgb(0, 0, 0);
+}
+
+.header li a {
+	display: block;
+	height: 50px;
+	color: rgb(0, 0, 0);
+	line-height: 50px;
+	text-align: center;
+}
+
+.content {
+	width: 100%;
+}
+
+.bgc {
+	width:100%; 
+	height:820px;
+}
+.diyi:hover{
+	background-image: url(../img/01-1.jpeg);
+}
+.dier:hover{
+	background-image: url(../img/01-2.jpeg);
+}
+.disan:hover{
+	background-image: url(../img/01-3.jpeg);
+}
+.disi:hover{
+	background-image: url(../img/01-4.jpeg);
+}
