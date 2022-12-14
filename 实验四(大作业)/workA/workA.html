@@ -1,0 +1,174 @@
+<!--
+ * @Author: storm
+ * @Date: 2021-11-29 11:52:51
+ * @LastEditors: storm
+ * @LastEditTime: 2021-12-08 14:24:20
+ * @FilePath: \workA\workA.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100%;
+        background-color: rgb(255, 163, 42);
+      }
+      .container {
+        width: 50%;
+        height: 500px;
+        margin: 50px auto;
+        background-color: white;
+      }
+      form {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template: 50% 50%/50% 50%;
+        position: relative;
+      }
+      #red {
+        background-color: rgb(255, 133, 133);
+      }
+      #blue {
+        background-color: rgb(133, 186, 255);
+      }
+      #green {
+        background-color: rgb(151, 238, 151);
+      }
+
+      #yellow {
+        background-color: rgb(255, 254, 183);
+      }
+
+      .form-group {
+        padding: 3% 10%;
+      }
+      label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+      .form-control {
+        display: block;
+        width: 100%;
+        height: 20px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+        -webkit-transition: border-color ease-in-out 0.15s,
+          box-shadow ease-in-out 0.15s;
+        -o-transition: border-color ease-in-out 0.15s,
+          box-shadow ease-in-out 0.15s;
+        -webkit-transition: border-color ease-in-out 0.15s,
+          -webkit-box-shadow ease-in-out 0.15s;
+        transition: border-color ease-in-out 0.15s,
+          -webkit-box-shadow ease-in-out 0.15s;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s,
+          -webkit-box-shadow ease-in-out 0.15s;
+      }
+      .hobby {
+        display: grid;
+        grid-template-columns: 10% 40% 10% 40%;
+      }
+      #submitBtn {
+        position: absolute;
+        bottom: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="./workA.html" name="" id="formA">
+        <div id="red" class="form-group">
+          <label for="">用户名</label>
+          <input type="text" name="user" size="20" class="form-control" />
+          <label for="">密码</label>
+          <input type="text" name="password" size="30" class="form-control" />
+          <label for="">再次输入密码</label>
+          <input type="text" name="passwordA" size="30" class="form-control" />
+        </div>
+        <div id="blue" class="form-group">
+          <span class="">所在地:</span>
+          <div
+            class="cscs-select"
+            style="display: flex; font-weight: 500; line-height: 35px"
+          >
+            <section>
+              <select class="province" id="province" selected="selected">
+                <option
+                  value="0"
+                  id="college"
+                  name="province"
+                  disabled
+                  selected
+                >
+                  请选择城市
+                </option>
+              </select>
+            </section>
+            省
+            <section>
+              <select class="city" id="city" selected="selected">
+                <option value="" id="college" name="city" disabled selected>
+                  请选择城市
+                </option>
+              </select>
+            </section>
+            市
+          </div>
+        </div>
+        <div id="green" class="form-group">
+          <label for="" style="display: block">爱好</label>
+          <div class="hobby">
+            <input type="checkbox" name="hobby" value="游泳" />游泳
+            <input type="checkbox" name="hobby" value="篮球" />篮球
+            <input type="checkbox" name="hobby" value="足球" />足球
+            <input type="checkbox" name="hobby" value="乒乓球" />乒乓球
+            <input type="checkbox" name="hobby" value="羽毛球" />羽毛球
+            <input type="checkbox" name="hobby" value="跳舞" />跳舞
+          </div>
+        </div>
+        <div id="yellow" class="form-group">
+          <label for="">留言</label>
+          <textarea
+            rows="10"
+            name="message"
+            cols="30"
+            class="form-control"
+            style="height: 60%"
+          ></textarea>
+        </div>
+        <button type="button" id="submitBtn" onclick="submitForm()">
+          提交
+        </button>
+      </form>
+      <div
+        style="
+          width: 60px;
+          background-color: aquamarine;
+          margin: 0 auto;
+          position: relative;
+          top: 150px;
+        "
+      >
+        <a href="../workB/workB.html">下一页</a>
+      </div>
+    </div>
+    <script src="./workA.js"></script>
+  </body>
+</html>

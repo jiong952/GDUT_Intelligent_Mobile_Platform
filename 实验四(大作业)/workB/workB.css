@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+fieldset,
+img {
+  border: 0;
+  vertical-align: top;
+}
+a,
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+a,
+button {
+  cursor: pointer;
+}
+body {
+  background: rgba(153, 204, 51);
+  width: 100%;
+}
+.box {
+  /* width: 100%; */
+  width: 800px;
+  height: 42px;
+  background: #fff url("images/wifi.png") right center no-repeat;
+  margin: 10px auto;
+  border-radius: 8px;
+  /* position: flex; */
+  position: relative;
+  /* justify-content: center; */
+  box-sizing: border-box;
+}
+.box ul {
+  list-style: none;
+  position: relative;
+}
+.box li {
+  float: left;
+  width: 83px;
+  height: 42px;
+  font: 500 16px/42px "simsun";
+  cursor: pointer;
+}
+
+.box li ul {
+  width: 83px;
+  position: absolute;
+  top: 37px;
+  display: none;
+  text-align: center;
+  background-color: #fff;
+  z-index: 999;
+  border-radius: 10%;
+}
+.box span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 83px;
+  height: 42px;
+  background: url("images/cloud.gif") no-repeat;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 10px auto;
+  transform: scale(0.65, 0.65);
+}
+.slide {
+  height: 500px;
+  position: relative;
+}
+.slide li {
+  position: absolute;
+  left: 200px;
+  top: 0;
+}
+.slide li img {
+  width: 100%;
+}
+.arrow {
+  opacity: 0;
+}
+.prev,
+.next {
+  width: 76px;
+  height: 112px;
+  position: absolute;
+  top: 50%;
+  margin-top: -56px;
+  background: url(./images/prev.png) no-repeat;
+  z-index: 99;
+}
+.next {
+  right: 0;
+  background-image: url(./images/next.png);
+  z-index: 99;
+}
+
+/* 表单 */
+
+.wrap_2 {
+  width: 410px;
+  margin: 100px auto;
+  transform: scale(1.5, 1.5);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #c0c0c0;
+}
+
+th,
+td {
+  border: 1px solid #d0d0d0;
+  color: #404060;
+  padding: 10px;
+}
+
+th {
+  background-color: #09c;
+  font: bold 16px "Î¢ÈíÑÅºÚ";
+  color: #fff;
+}
+
+td {
+  font: 14px "Î¢ÈíÑÅºÚ";
+}
+
+td a.get {
+  text-decoration: none;
+}
+
+a.del:hover {
+  text-decoration: underline;
+}
+
+tbody tr {
+  background-color: #f0f0f0;
+}
+
+tbody tr:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.btnAdd {
+  width: 110px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-item {
+  height: 100%;
+  position: relative;
+  padding-left: 100px;
+  padding-right: 20px;
+  margin-bottom: 34px;
+  line-height: 36px;
+}
+
+.form-item > .lb {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100px;
+  text-align: right;
+}
+
+.form-item > .txt {
+  width: 300px;
+  height: 32px;
+}
+
+.mask {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 220%;
+  background: #000;
+  opacity: 0.5;
+  display: none;
+  z-index: 2;
+}
+
+.form-add {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-left: -197px;
+  padding-bottom: 20px;
+  background: #fff;
+  display: none;
+  z-index: 5;
+}
+
+.form-add-title {
+  background-color: #f7f7f7;
+  border-width: 1px 1px 0 1px;
+  border-bottom: 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-add-title span {
+  width: auto;
+  height: 18px;
+  font-size: 16px;
+  font-family: ËÎÌå;
+  font-weight: bold;
+  color: rgb(102, 102, 102);
+  text-indent: 12px;
+  padding: 8px 0px 10px;
+  margin-right: 10px;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+}
+
+.form-add-title div {
+  width: 16px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  font-size: 30px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.form-submit {
+  text-align: center;
+}
+
+.form-submit input {
+  width: 170px;
+  height: 32px;
+}
+
+/* 底部 */
+footer {
+  width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 200px;
+}
+footer .box_big {
+  width: 95%;
+  height: auto;
+
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+footer .small {
+  z-index: 0;
+}
+
+footer .big {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -200px;
+  left: 300px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  display: none;
+}
+footer .mask {
+  width: 175px;
+  height: 175px;
+  background: rgba(255, 255, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: move;
+  display: none;
+}
+footer .small {
+  position: relative;
+}
+
+footer .small img {
+  width: 100%;
+}
+footer img {
+  vertical-align: top;
+}
