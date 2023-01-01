@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="实验四(大作业)1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/实验四(大作业)/workC.zip!/" />
+      <root url="jar://$PROJECT_DIR$/实验四(大作业)/workB.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

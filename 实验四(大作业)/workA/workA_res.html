@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100%;
+        /*background-color: rgb(255, 163, 42);*/
+        background-image: url('./images/background.jpg');
+      }
+      .container {
+        width: 50%;
+        height: 500px;
+        margin: 50px auto;
+        background-color: white;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="res_div"></div>
+
+    <script>
+      var res_div = document.getElementById("res_div");
+      var message = window.sessionStorage.getItem("message");
+      res_div.innerHTML = message;
+    </script>
+  </body>
+</html>

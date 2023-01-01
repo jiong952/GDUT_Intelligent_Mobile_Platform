@@ -1,0 +1,35 @@
+#content,
+#content-3 {
+  text-align: center;
+}
+
+#content .container img {
+  width: 40%;
+}
+
+.ui-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ui-footer span {
+  margin: 0 2em;
+  font-size: 0.5em;
+}
+
+#content-3 img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.ui-grid-c {
+  border-bottom: black solid 0.1em;
+  margin-bottom: -0.1em;
+}
+
+.ui-grid-c * {
+  border: black solid 0.1em;
+  margin: 0 0 -0.1em 0;
+}
